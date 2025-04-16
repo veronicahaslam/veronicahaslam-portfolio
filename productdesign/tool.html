@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handheld Sander Tool Mount Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #333;
+            padding: 10px 20px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #e9e9e9;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .back-button-wrapper {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            flex: 1;
+        }
+
+        .grid-item {
+            background: white;
+            padding: 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .description {
+            max-width: 500px;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #444;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="back-button-wrapper">
+            <button class="back-button" onclick="window.history.back()">← Go Back</button>
+        </div>
+
+        <h1>Handheld Sander Tool Mount Design</h1>
+
+        <div class="content">
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="tool/tool_pic3.png" alt="Tool Image 1">
+                </div>
+                <div class="grid-item">
+                    <img src="tool/tool_pic2.png" alt="Tool Image 2">
+                </div>
+            </div>
+            <div class="description">
+                <p><strong>Identifying the Problem and Design Context</strong></p>
+                <p>An unorganized space often leads to an unused one, which is especially evident in the backroom of the Design and Innovation (DIS) studio. Tools are left scattered, cords are in the way, and workspace is lost due to clutter. To address this spatial and organizational issue, we designed a product that holds the handheld saw/sander in a way that keeps it off the workspace and out of the way of the students who use the backroom. Our goal was to create a mechanism that prioritizes both safety and functionality while being intuitive and unobtrusive for everyday use. This product was created specifically for the needs of DIS students at Rensselaer Polytechnic Institute, where maintaining creative momentum in a functional space is essential.
+
+</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="tool/tool_pic5.png" alt="Tool Image 3">
+                </div>
+                <div class="grid-item">
+                    <img src="tool/tool_pic4.png" alt="Tool Image 4">
+                </div>
+            </div>
+            <div class="description">
+                <p><strong>Understanding the User and the Design Philosophy</strong></p>
+                <p>Designing for DIS students meant building something that not only solved a problem but did so in a creative, thoughtful way. The challenge was designing for designers—an audience that values both aesthetics and functionality. From personal experience, we knew that during project deadlines, the backroom often became chaotic and disorganized. We leaned into the stereotype (which we ourselves sometimes fulfill) that DIS students can be messy under pressure. Our design aimed to promote organization even during those high-stress moments. We also considered other potential users like professors and graduate students who use or oversee the space. In addition to safety and function, we also wanted to encourage a cleaner environment that fosters creativity and clearer thinking.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="tool/tool_pic9.png" alt="Tool Image 5">
+                </div>
+                <div class="grid-item">
+                    <img src="tool/tool_pic8.png" alt="Tool Image 6">
+                </div>
+            </div>
+            <div class="description">
+                <p><strong>Ideation and Design Development</strong></p>
+                <p>We began by identifying the most underutilized and cluttered space—the workbench at the back of the studio—and focused on the issue of the handheld saw/sander and its wiring. These tools often lay tangled or pushed aside, creating safety concerns and wasting workspace. Our early concepts focused on using the pole to support a holder for the tool. After exploring several ideas, we landed on an open-top design that protects the tool without fully enclosing it, allowing for quick and convenient access. Throughout the process, we prioritized simplicity and ease of use, ensuring our solution would fit naturally into the studio workflow.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="tool/tool_pic10.png" alt="Tool Image 7">
+                </div>
+                <div class="grid-item">
+                    <img src="tool/tool_pic11.png" alt="Tool Image 8">
+                </div>
+            </div>
+            <div class="description">
+                <p><strong>Prototyping and User Testing</strong></p>
+                <p>For prototyping, we chose to 3D model our design in Rhino-8 and print it. After carefully measuring the tool and the pole, we modeled a holder that would fit precisely. However, our first print came out larger than expected—6 inches instead of 4—due to issues with scale and depth in the model. To make it work for critique, we used cardboard to compensate for sizing. User testing revealed a few key issues: the product felt bulky, the top was oversized, and it didn’t grip the pole securely. Some students unfamiliar with the tool were confused about the product’s function. During a second test, we confirmed that the product could fall off the pole if handled roughly, which undermined its safety purpose.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="tool/tool_pic12.png" alt="Tool Image 9">
+                </div>
+                <div class="grid-item">
+                    <img src="tool/tool_pic13.png" alt="Tool Image 10">
+                </div>
+                <div class="grid-item">
+                    <img src="tool/tool_pic14.png" alt="Tool Image 11">
+                </div>
+            </div>
+            <div class="description">
+                <p><strong>Reflection and Future Improvements</strong></p>
+                <p>Despite the setbacks, our prototype met the basic goals of promoting safety and organization in the studio. That said, we identified several areas for improvement. Future iterations would involve rescaling the design, resizing the top to better fit the tool, and reinforcing the pole attachment. We plan to experiment with rubber lining or a clasp mechanism—similar to weight clips at the gym—to prevent slipping or detachment. Our next steps will involve testing these changes with users and continuing to refine the design based on feedback. While not perfect, this prototype successfully addresses the core issue of tool disorganization and sets a strong foundation for future development.	</p>
+            </div>
+        </div>
+
+        <div class="back-button-wrapper">
+            <button class="back-button" onclick="window.history.back()">← Go Back</button>
+        </div>
+    </div>
+</body>
+</html>

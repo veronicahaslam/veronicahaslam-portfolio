@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Festival Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #333;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #eee;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Back Button -->
+  <button class="back-button" onclick="window.history.back()">← Back</button>
+
+  <h1>Music Festival Design</h1>
+
+  <div class="gallery">
+    <img src="music/music_pic1.png" alt="Image 1">
+    <img src="music/music_pic2.png" alt="Image 2">
+    <img src="music/music_pic3.png" alt="Image 3"> 
+    <img src="music/music_pic4.png" alt="Image 4">
+    <img src="music/music_pic5.png" alt="Image 5">
+    <img src="music/music_pic6.png" alt="Image 6">
+    <img src="music/music_pic7.jpg" alt="Image 7">
+    <img src="music/music_pic8.jpg" alt="Image 8"> 
+    <img src="music/music_pic9.jpg" alt="Image 9">
+    <img src="music/music_pic10.png" alt="Image 10">
+  </div>
+
+  <!-- Bottom Back Button -->
+  <button class="back-button" onclick="window.history.back()">← Back</button>
+
+</body>
+</html>

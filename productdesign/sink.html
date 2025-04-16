@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kitchen Sink Product Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .back-button {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #333;
+      padding: 10px 20px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .back-button:hover {
+      background-color: #e9e9e9;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .back-button-wrapper {
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      flex: 1;
+    }
+
+    .grid-item {
+      background: white;
+      padding: 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .description {
+      max-width: 500px;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #444;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-button-wrapper">
+      <button class="back-button" onclick="window.history.back()">← Go Back</button>
+    </div>
+
+    <h1>Kitchen Sink Product Design</h1>
+
+    <div class="content">
+      <div class="grid">
+        <div class="grid-item"><img src="sink/sink_pic2.png" alt="Sink Image 1" /></div>
+        <div class="grid-item"><img src="sink/sink_pic3.png" alt="Sink Image 2" /></div>
+      </div>
+      <div class="description">
+        <p><strong>Problem Statement & User Group</strong></p>
+        <p>The project began with the question: How might we keep shared kitchen sinks in dorms usable and cleanly to ease roommate tension? This was designed around undergraduate students—our identified user group—who often struggle with maintaining cleanliness in shared living spaces. The sink, in particular, was a major source of frustration and tension among roommates.</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="grid">
+        <div class="grid-item"><img src="sink/sink_pic4.png" alt="Sink Image 4" /></div>
+        <div class="grid-item"><img src="sink/sink_pic5.png" alt="Sink Image 5" /></div>
+        <div class="grid-item"><img src="sink/sink_pic6.png" alt="Sink Image 6" /></div>
+      </div>
+      <div class="description">
+        <p><strong>Understanding the Problem</strong></p>
+        <p>We approached the issue by breaking down the components of the problem using a fill-in-the-blank method. Through this, we discovered that the primary point of contention came from the build-up of dirty dishes and an unclean sink, both of which negatively affected roommate dynamics. These findings led us to focus on solutions that would encourage better habits and reduce conflict.</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="grid">
+        <div class="grid-item"><img src="sink/sink_pic15.png" alt="Flower Image 7" /></div>
+        <div class="grid-item"><img src="sink/sink_pic8.png" alt="Flower Image 8" /></div>
+        <div class="grid-item"><img src="sink/sink_pic9.png" alt="Flower Image 9" /></div>
+      </div>
+      <div class="description">
+        <p><strong>Exploration & Design Direction</strong></p>
+        <p>Initial ideations explored solutions inspired by hostile architecture—designs meant to discourage certain behaviors by making them uncomfortable. However, we realized that making the sink unusable would only create more issues. Other ideas, like a faucet extender, already existed and didn’t solve all the key problems. Instead, we chose to design a product that could enhance the functionality of existing sinks without requiring a full redesign.</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="grid">
+        <div class="grid-item"><img src="sink/sink_pic15.png" alt="Flower Image 10" /></div>
+        <div class="grid-item"><img src="sink/sink_pic11.png" alt="Flower Image 11" /></div>
+      </div>
+      <div class="description">
+        <p><strong>Key Pain Points of the Sink</strong></p>
+        <p>We identified four core issues that students faced with shared sinks:</p>
+        <ul>
+          <li>Shallow sink depth</li>
+          <li>Inaccessible drain when dishes piled up</li>
+          <li>Poor faucet positioning</li>
+          <li>Flat bottoms that trapped food and grime</li>
+        </ul>
+        <p>These pain points were varied, and while individual solutions existed, we wanted to create one unified product that could address as many of these problems as possible without replacing the sink.</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="grid">
+        <div class="grid-item"><img src="sink/sink_pic17.png" alt="Flower Image 13" /></div>
+        <div class="grid-item"><img src="sink/sink_pic16.png" alt="Flower Image 14" /></div>
+        <div class="grid-item"><img src="sink/sink_pic3.png" alt="Flower Image 15" /></div>
+      </div>
+      <div class="description">
+        <p><strong>Final Design</strong></p>
+        <p>Our final design is a drainable basket suspended by tension rods, keeping dirty dishes organized and the sink accessible. It features:</p>
+        <ul>
+          <li>Drain holes to prevent water buildup</li>
+          <li>A sliding and folding mechanism for flexibility and storage</li>
+          <li>A counterweight strap system for added support</li>
+        </ul>
+        <p>This system fits most standardized sinks, stores easily, and helps maintain a clean environment. One unique feature is the adjustable strap that allows the basket to fold into tiers—replacing our earlier mechanism that didn’t work well for students. Though it has some constraints (like limited support for large or heavy dishes), the design offers a simple, functional solution to a common dorm problem.</p>
+      </div>
+    </div>
+
+    <div class="back-button-wrapper">
+      <button class="back-button" onclick="window.history.back()">← Go Back</button>
+    </div>
+  </div>
+</body>
+</html>
