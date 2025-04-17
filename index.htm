@@ -24,7 +24,8 @@
             letter-spacing: 1px;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1000px;
             margin: 30px auto;
             background: white;
             padding: 25px;
@@ -44,24 +45,27 @@
         }
         .about-container {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            gap: 30px;
+            gap: 20px;
         }
         .about-text {
             flex: 1;
             font-size: 16px;
             line-height: 1.6;
+            min-width: 250px;
         }
         .about-image {
-            width: 220px;
-            height: 220px;
+            width: 100%;
+            max-width: 220px;
+            height: auto;
             border-radius: 15px;
             object-fit: cover;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             padding: 20px 0;
         }
@@ -122,6 +126,28 @@
             margin-top: 30px;
             font-size: 14px;
         }
+
+        @media (max-width: 900px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 20px;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            .about-text {
+                font-size: 15px;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -134,8 +160,8 @@
             <div class="about-container">
                 <img src="Porfolio_Picture.png" alt="About Me Image" class="about-image">
                 <div class="about-text">
-                    <p>Welcome to my portfolio! </p>
-			<p>My name is Veronica Haslam. I am a design student at Rensselaer Polytechnic Institute!</p> 
+                    <p>Welcome to my portfolio!</p>
+                    <p>My name is Veronica Haslam. I am a design student at Rensselaer Polytechnic Institute!</p> 
                     <p>My work delves into the intersection of design, politics, and research, exploring the decisions that shape our built environment. Through hands-on studio projects, I have engaged in graphic, product, interior, and industrial design, continuously seeking opportunities to expand my expertise and refine my creative approach.</p>
                     <p>I currently manage @rpialphaphi's accounts!</p>
                 </div>
