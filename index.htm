@@ -65,7 +65,7 @@
         }
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 20px 0;
         }
@@ -74,14 +74,10 @@
             text-align: center;
             background: #ffffff;
             border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
         }
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-        }
+
+        /* Base button styling with improved hover effect */
         .project-button {
             position: relative;
             display: flex;
@@ -96,9 +92,9 @@
             font-weight: bold;
             text-decoration: none;
             border-radius: 12px;
-            transition: opacity 0.3s ease;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
-            z-index: 1;
         }
         .project-button::before {
             content: "";
@@ -108,7 +104,7 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            border-radius: 12px;
+            transition: background 0.3s ease;
             z-index: 0;
         }
         .project-button span {
@@ -116,15 +112,20 @@
             z-index: 2;
         }
         .project-button:hover {
-            opacity: 0.85;
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
         }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #222;
-            color: white;
-            margin-top: 30px;
-            font-size: 14px;
+        .project-button:hover::before {
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        /* Featured project style (UX card) */
+        .project.featured {
+            transform: scale(1.03);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .project.featured:hover {
+            transform: scale(1.05) translateY(-5px);
         }
 
         @media (max-width: 900px) {
@@ -132,7 +133,6 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
         @media (max-width: 600px) {
             header {
                 font-size: 20px;
@@ -158,10 +158,10 @@
         <div class="section" id="about-me">
             <h2>About Me</h2>
             <div class="about-container">
-                <img src="Porfolio_Picture.png" alt="About Me Image" class="about-image">
+                <img src="Portfolio_Picture.JPG" alt="About Me Image" class="about-image">
                 <div class="about-text">
                     <p>Welcome to my portfolio!</p>
-                    <p>My name is Veronica Haslam. I am a design & communications student at Rensselaer Polytechnic Institute!</p> 
+                    <p>My name is Veronica Haslam. I am a design and communications student at Rensselaer Polytechnic Institute!</p> 
                     <p>My work delves into the intersection of design, politics, and research, exploring the decisions that shape our built environment. Through hands-on studio projects, I have engaged in graphic, product, interior, and industrial design, continuously seeking opportunities to expand my expertise and refine my creative approach.</p>
                     <p>I currently manage @rpialphaphi's accounts!</p>
                 </div>
@@ -170,6 +170,11 @@
         <div class="section" id="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
+                <div class="project featured">
+                    <a href="uxdesign.html" class="project-button" style="background-image: url('uxbutton.png');">
+                        <span>UX Design & Research</span>
+                    </a>
+                </div>
                 <div class="project">
                     <a href="productdesign.html" class="project-button" style="background-image: url('pdbutton.png');">
                         <span>Product Design</span>
