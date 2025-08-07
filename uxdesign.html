@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UX Design & Research – Proxy Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #222;
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section p, .section li {
+      font-size: 16px;
+    }
+
+    .section ul {
+      margin-top: 10px;
+    }
+
+    .audit-highlight {
+      background-color: #fef9e7;
+      padding: 10px;
+      border-left: 4px solid #f1c40f;
+      margin: 20px 0;
+    }
+
+    img.dashboard-image {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+
+    /* Go Back Button Styles (Black & White) */
+    .go-back-btn {
+      display: inline-block;
+      font-size: 18px;
+      color: #fff; /* White text */
+      text-decoration: none;
+      padding: 15px 25px;
+      background-color: #333; /* Black background */
+      border: 2px solid #333;
+      border-radius: 25px;
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    .go-back-btn:hover {
+      background-color: #fff; /* White background on hover */
+      color: #333; /* Black text on hover */
+      transform: translateX(-50%) translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .go-back-btn:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(51, 51, 51, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    UX Design & Research – Proxy Dashboard
+  </header>
+
+  <div class="container">
+
+    <!-- Go Back Button -->
+    <a href="javascript:history.back()" class="go-back-btn">
+      &#8592; Go Back
+    </a>
+
+    <img src="proxywireframe.jpg" alt="Proxy Dashboard Wireframe" class="dashboard-image" />
+
+    <div class="section">
+      <h1>UX Audit Summary – Proxy Voting Dashboard Experience</h1>
+      <p>This audit explored the current limitations and future possibilities of improving the user experience across two interconnected proxy voting solutions. The primary goal was to reimagine a unified, intelligent dashboard system that caters to different user roles, enhances productivity, and supports seamless navigation between tasks and applications.</p>
+    </div>
+
+    <div class="section">
+      <h2>Current State Analysis</h2>
+      <ul>
+        <li>One platform lacked a dashboard entirely; the other had a static layout with four preset widgets and no customization.</li>
+        <li>Dashboards operated in isolation, forcing users to context-switch between systems for task management.</li>
+        <li>No mechanisms existed for highlighting deadlines, recent activity, or personal priorities.</li>
+        <li>Users relied on manual tracking, increasing the risk of missed tasks and compliance issues.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Audit Goals</h2>
+      <ul>
+        <li>Create an intuitive, proactive dashboard beyond static widgets.</li>
+        <li>Enable role-aware, task-driven daily command centers.</li>
+        <li>Support seamless workflows across systems.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Key Design Opportunities & Recommendations</h2>
+
+      <h3>1. Role-Based Personalization</h3>
+      <ul>
+        <li>Customize dashboard views per user type (e.g., proxy specialist, compliance officer).</li>
+        <li>Examples: A proxy specialist sees upcoming votes; a compliance officer sees audit alerts.</li>
+      </ul>
+
+      <h3>2. Configurable Widgets</h3>
+      <ul>
+        <li>Users can show/hide/reorder widgets like "My Alerts" or "My Reports."</li>
+        <li>Support different layouts based on user goals.</li>
+      </ul>
+
+      <h3>3. Smart Task Suggestions</h3>
+      <ul>
+        <li>Use behavioral data to suggest timely actions.</li>
+        <li>Example: "3 votes due this week — block focus time?"</li>
+      </ul>
+
+      <h3>4. Notification Center</h3>
+      <ul>
+        <li>Filter by type, urgency, client, or role.</li>
+        <li>Include mobile alerts and mute options.</li>
+      </ul>
+
+      <h3>5. Recent Activity Resume</h3>
+      <ul>
+        <li>Show last 2–3 items viewed or edited to streamline task resumption.</li>
+      </ul>
+
+      <h3>6. Time-Based and Calendar Views</h3>
+      <ul>
+        <li>Plan tasks via daily/weekly/deadline modes.</li>
+        <li>Enable focus blocks and structured planning.</li>
+      </ul>
+
+      <h3>7. Custom Tagging</h3>
+      <ul>
+        <li>Tag meetings or tasks with labels like “Urgent” or “Needs Review.”</li>
+        <li>Useful for handoffs and team coordination.</li>
+      </ul>
+
+      <h3>8. Integrated Help & Guidance</h3>
+      <ul>
+        <li>Contextual onboarding, micro-lessons, and support nudges.</li>
+        <li>Trigger help when friction is detected (e.g., errors, long pauses).</li>
+      </ul>
+
+      <h3>9. Change Management Support</h3>
+      <ul>
+        <li>“What’s New” section for updates and policy changes.</li>
+        <li>Provide empathetic and actionable messaging.</li>
+      </ul>
+
+      <h3>10. Remote Notifications</h3>
+      <ul>
+        <li>Opt-in mobile alerts tied to time zones and calendar data.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>The Vision: A Unified Super Dashboard</h2>
+      <p>The ideal future state is a centralized, intelligent dashboard that consolidates critical information from multiple systems and acts as a personalized control center for all users.</p>
+      <div class="audit-highlight">
+        <strong>Key Features:</strong>
+        <ul>
+          <li><strong>Deadlines:</strong> Upcoming votes, reports, and meetings.</li>
+          <li><strong>Action Items:</strong> Real-time task updates with urgency.</li>
+          <li><strong>Alerts:</strong> Unresolved issues, compliance exceptions.</li>
+          <li><strong>Planner View:</strong> Personalized focus suggestions.</li>
+          <li><strong>Deep Links:</strong> Direct access to relevant content.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Best Practices Incorporated</h2>
+      <ul>
+        <li><strong>User Role Mapping:</strong> Designed for analysts, compliance officers, and executives.</li>
+        <li><strong>Clarity:</strong> Prioritized actionable insights and real-time data.</li>
+        <li><strong>Accessibility:</strong> WCAG-compliant colors, fonts, and UI patterns.</li>
+        <li><strong>Scalability:</strong> Flexible enough for large portfolios and workflows.</li>
+        <li><strong>Customization:</strong> Personalized without rigid templates.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Strategic Outcomes</h2>
+      <ul>
+        <li>Reduce missed votes and compliance risks.</li>
+        <li>Increase user confidence and clarity.</li>
+        <li>Improve task traceability and planning.</li>
+        <li>Support long-term scale and cross-functional collaboration.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    UX Design by Veronica Haslam &mdash; 2025
+  </footer>
+
+</body>
+</html>
